@@ -1,0 +1,46 @@
+/*Author : Shari Roluthon
+Date : 3rd June 2022*/
+
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	margin: 0;
+}
+
+/*navbar style*/
+.parent1{
+	background: #FFEAEE;	
+}
+
+
+/*form style*/
+.formdivbackgrnd{
+	background-image: url("../images/backgrnd.svg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+form input{
+	box-sizing: border-box;
+}
+.font_size{
+	font-size: 14px;
+}
+
+
+
+/*customer review style*/
+.reviewbackgrnd{
+	background-color: #EAF8FF;
+}
+.review_font_size{
+	font-size: 12px;
+}
+
+
+/*footer style*/
+footer{
+	background: #CC1D4A;
+}
+
+

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Home</title>
+</head>
+<body>
+
+<!-- main frontpage begins -->
+<div class="parent1">
+	
+	<!-- nav bar here -->
+		<nav class="navbar navbar-expand-lg navbar-light">
+			  	<img src="images/logo.png" height="50px" width="70px">
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    	<span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			      <div class="navbar-nav font_size fw-bold">
+			        <a class="nav-link m-3" href="#">Benefits</a>
+			        <a class="nav-link m-3" href="#">About us</a>
+			        <a class="nav-link m-3" href="#">Testimonials</a>
+			        <a class="nav-link m-3" href="#">Values</a>
+			        <a><button type="button" class="btn btn-outline-danger text-danger m-3 font_size fw-bold rounded-pill">Visit website</button></a>
+			      </div>
+			    </div>
+		</nav>
+
+	<!-- navbar end here -->
+
+	<!-- signupform starts here -->
+	<div class="formdivbackgrnd">
+		<div class="row">
+			<div class="col-md-6 col-sm-1 ">
+			</div>
+			<div class="col-md-6 col-sm-11">
+					<form class="bg-white m-5 md-m-1 p-4 rounded" method="post" onsubmit="return validation()" action="https://webandcrafts.com/">
+						<h3><b>Become our franchise partner</b></h3>
+						<p class="font_size text-muted">If you interested in cooperation with us,just let us know through form below</p>
+						  <div class="row mb-2">
+								    <div class="col-md-6 col-md-1">
+								      <div class="form-outline">
+								        <input type="text" id="firstname" placeholder="First Name" class="form-control font_size" required />
+								        <error id="fname_err"></error><label class="form-label" for="form6Example1"></label>
+								      </div>
+								    </div>
+								    <div class="col-md-6 col-md-1">
+								      <div class="form-outline">
+								        <input type="text" id="lastname" placeholder="Last Name" class="form-control font_size" required />
+								        <error id="lname_err"></error><label class="form-label" for="form6Example2"></label>
+								      </div>
+								    </div>
+						  </div>
+						  <div class="row mb-2">
+								    <div class="col-md-6 col-md-1">
+								      <div class="form-outline">
+								        <input type="email" id="email" placeholder="Email" class="form-control font_size" required />
+								        <error id="email_err"></error><label class="form-label" for="form6Example3"></label>
+								      </div>
+								    </div>
+								    <div class="col-md-6 col-md-1">
+								      <div class="form-outline">
+								        <input type="text" id="mobno" placeholder="Mobile Number" class="form-control font_size" required />
+								        <error id="mobno_err"></error><label class="form-label" for="form6Example4"></label>
+								      </div>
+								    </div>
+						  </div>
+						  <div class="row mb-2">
+								    <div class="col-md-6 col-md-1">
+								      <div class="form-outline">
+								        <input type="text" id="form6Example5" placeholder="State" class="form-control font_size" />
+								        <label class="form-label" for="form6Example5"></label>
+								      </div>
+								    </div>
+								    <div class="col-md-6 col-md-1">
+								      <div class="form-outline">
+								        <input type="text" id="form6Example6" placeholder="Occupation" class="form-control font_size" />
+								        <label class="form-label" for="form6Example6"></label>
+								      </div>
+								    </div>
+						  </div>
+						  <div class="row mb-2">
+								    <div class="col-md-6 col-md-1">
+								      <div class="form-outline">
+								        <input type="text" id="form6Example7" placeholder="Proposed Location Of Store" class="form-control font_size" />
+								        <label class="form-label" for="form6Example7"></label>
+								      </div>
+								    </div>
+								    <div class="col-md-6 col-md-1">
+								      <div class="form-outline">
+								        <input type="text" id="form6Example8" placeholder="Frontage" class="form-control font_size" />
+								        <label class="form-label" for="form6Example8"></label>
+								      </div>
+								    </div>
+						  </div>
+						  <!-- Checkbox -->
+						  <div class="form-check mb-4">
+						    <input class="form-check-input me-2 bg-danger" type="checkbox" value="" id="form6Example9" checked />
+						    <label class="form-check-label font_size" for="form6Example9"> Read the Information. I consent to the processing of personal data </label>
+						  </div>
+
+						  <!-- Submit button -->
+						  <button type="submit" class="btn btn-danger btn-block mb-4 font_size rounded-pill w-100">Submit</button>
+					</form>
+				</div>
+			</div>
+	</div>
+
+	<!-- signupform ends here -->
+
+</div>
+	<!-- main ends -->
+
+
+<!-- about popees starts -->
+
+<!-- Intro starts -->
+<div class="row m-5">
+				<div class="col-md-6 col-sm-12 fs-6 mx-auto text-center">
+					<h3><b>Why Partner With Popees</b></h3>
+					<p class="text-dark font_size">Dedicate our efforts in constructing a healthier and happier world by means of offering the most comfortable and safe cloths and allied products.</p>
+				</div>
+</div>
+<!-- Popees intro end here -->
+
+<!--specialities of popees -->
+
+<div class="row m-5">
+			<div class="card border-light m-2 p-2" style="width: 18rem;">
+			  				<img src="images/Gone.svg" width="36px" height="40px" class="card-img-left ms-3 rounded" style="background-color:#D4ECFF" alt="...">
+							  <div class="card-body">
+							    <h6 class="card-title"><b>24/7 support</b></h6>
+							    <p class="card-text text-muted font_size">Team up as a franchisee with Shadowfax, and become a part of our strong network covering 500+</p>
+							  </div>
+			</div>
+			<div class="card border-light m-2 p-2" style="width: 18rem;">
+			  				<img src="images/Gtwo.svg" width="36px" height="40px" class="card-img-left ms-3 rounded" style="background-color:#FFE2E5" alt="...">
+							  <div class="card-body">
+							    <h6 class="card-title"><b>Training</b></h6>
+							    <p class="card-text text-muted font_size">An effective, hands-on training is provided to all franchise partners so they become a holistic part of the</p>
+							  </div>
+			</div>
+			<div class="card border-light m-2 p-2" style="width: 18rem;">
+			  				<img src="images/Gthree.svg" width="36px" height="40px" class="card-img-left ms-3 rounded" style="background-color:#FFEFCC" alt="...">
+							  <div class="card-body">
+							    <h6 class="card-title"><b>Growth</b></h6>
+							    <p class="card-text text-muted font_size">You can reach out to Shadowfax representatives at any point of the day.</p>
+							  </div>
+			</div>
+			<div class="card border-light m-2 p-2" style="width: 18rem;">
+			  				<img src="images/Gfour.svg" width="36px" height="40px" class="card-img-left ms-3 rounded" style="background-color:#F0E5FF" alt="...">
+							  <div class="card-body">
+							    <h6 class="card-title"><b>Trust</b></h6>
+							    <p class="card-text text-muted font_size">Franchise partners will be given complete access to APIs which is our stronghold and makes logistics</p>
+							  </div>
+			</div>
+</div>
+<!--specialities of popees ends -->
+
+
+<!-- Retail partners content starts -->
+<div class="row m-5">
+			<div class="col-md-4 m-3">
+							<img src="images/Twomen.png" class="img-fluid" width="370px">
+			</div>
+			<div class="col-md-5 align-self-center m-4">
+							<h3><b>We Join Hands With Retail Partners</b></h3>
+							<p class="d-block font_size">Popees, a place where one can find the best of fashion for your little one. Founded with love and a penchant for quality, Popees was established in 2003 and has now grown to become one of the most loved and trusted names for baby clothing, maternity essentials, and children’s fashion. Finest cotton that breathes comfort and specialized yarns in with playfully bright colours and prints that look chic yet appeal universally is what Popees baby wear is all about.</p>
+							<button class="btn btn-danger btn-block rounded-pill p-2">Know more about us</button>
+			</div>
+			<div class="col-md-3"></div>
+</div>
+<!-- Retail partners content starts -->
+
+
+<!-- customer review starts -->
+<div class="row p-5 reviewbackgrnd">
+		<div class="col-md-1"></div>
+		<div class="col-md-3 align-self-center">
+				<h3 class="fw-bold">Here's What Our Customers Say</h3>
+				<p class="font_size">Popees, a place where one can find the best of fashion for your little one. Founded with love and a penchant for quality</p>
+		</div>
+		<div class="col-md-8 d-flex">
+				<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+							    <div class="carousel-item active" data-bs-interval="2000">
+							    			<div class="card-group">
+											    		<div class="card m-3 rounded" style="width: 16rem;">
+													    			<div class="card-body p-4">
+															    			<p class="review_font_size text-center text-muted">Popees, a place where one can find the best of fashion for your little one. Founded with love and a penchant for quality, Popees was established in 2003</p><hr />
+															    			<div class="d-flex">
+																	    			<img src="images/person1.png" class="rounded-circle img-fluid" />
+																	    			<p class="review_font_size d-flex align-items-center fw-bold m-2">Amos Diggory</p>
+																	    	</div>
+													        	</div>
+											      	</div>
+											        <div class="card m-3 rounded" style="width: 16rem;">
+											        			<div class="card-body p-4">
+													    					<p class="review_font_size text-center text-muted">Popees, a place where one can find the best of fashion for your little one. Founded with love and a penchant for quality, Popees was established in 2003</p><hr />
+													    					<div class="d-flex">
+													    								<img src="images/person2.png" class="rounded-circle img-fluid" />
+													    								<p class="review_font_size d-flex align-items-center fw-bold m-2">Amos Diggory</p>
+													    					</div>
+											        			</div>
+											      	</div>
+											        <div class="card m-3 rounded" style="width: 16rem;">
+											        			<div class="card-body p-4">
+													    					<p class="review_font_size text-center text-muted">Popees, a place where one can find the best of fashion for your little one. Founded with love and a penchant for quality, Popees was established in 2003</p><hr />
+													    					<div class="d-flex">
+													    								<img src="images/person3.png" class="rounded-circle img-fluid" />
+													    								<p class="review_font_size d-flex align-items-center fw-bold m-2">Amos Diggory</p>
+													    					</div>
+											        			</div>
+											      	</div>
+											   </div>
+							    </div>
+							    <div class="carousel-item" data-bs-interval="2000">
+							    			<div class="card-group">
+							     						<div class="card m-3 rounded" style="width: 16rem;">
+							     									<div class="card-body p-4">
+													    					<p class="review_font_size text-center text-muted">Popees, a place where one can find the best of fashion for your little one. Founded with love and a penchant for quality, Popees was established in 2003</p><hr />
+													    					<div class="d-flex">
+													    								<img src="images/person1.png" class="rounded-circle img-fluid" />
+													    								<p class="review_font_size d-flex align-items-center fw-bold m-2">Amos Diggory</p>
+													    					</div>
+											        			</div>
+											      	</div>
+											        <div class="card m-3 rounded" style="width: 16rem;">
+											        			<div class="card-body p-4">
+													    					<p class="review_font_size text-center text-muted">Popees, a place where one can find the best of fashion for your little one. Founded with love and a penchant for quality, Popees was established in 2003</p><hr />
+													    					<div class="d-flex">
+													    								<img src="images/person2.png" class="rounded-circle img-fluid" />
+													    								<p class="review_font_size d-flex align-items-center fw-bold m-2">Amos Diggory</p>
+													    					</div>
+											        			</div>
+											      	</div>
+											        <div class="card m-3 rounded" style="width: 16rem;">
+											        			<div class="card-body p-4">
+													    					<p class="review_font_size text-center text-muted">Popees, a place where one can find the best of fashion for your little one. Founded with love and a penchant for quality, Popees was established in 2003</p><hr />
+													    					<div class="d-flex">
+													    								<img src="images/person3.png" class="rounded-circle img-fluid" />
+													    								<p class="review_font_size d-flex align-items-center fw-bold m-2">Amos Diggory</p>
+													    					</div>
+											        			</div>
+											      	</div>
+											  </div>
+							    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+		</div>
+</div>
+<!--customer review ends -->
+
+
+<!-- About Popees ends -->
+
+<!-- "Our value" section begins -->
+<div class="row p-5">
+			<div class="col-md-2"></div>
+			<div class="col-md-5">
+							<h3 class="fw-bold mb-5">Our Values</h3>
+							<div class="">
+									<h6 class="fw-bold">Quality And Comfort</h6>
+									<p class="d-flex">Quality and comfort is the foreword of all we do. We strive hard to maintain the stringent standards and top notch quality throughout our production lines.<i class="bi bi-arrow-right"></i></p><hr class="text-warning" />
+							</div>
+							<div class="">
+									<h6 class="fw-bold">Healthy & Hygienic</h6>
+									<p class="d-flex">We produce feather-soft fabrics that are healthy and hygienic to the softest baby skin.<i class="bi bi-arrow-right"></i></p><hr/>
+							</div>
+							<div class="">
+									<h6 class="fw-bold">Affordable</h6>
+									<p class="d-flex">Our clothes are comfy, stylish, and trendy. They are made of high-quality cotton and cheap & affordable. Best suitable for babies of any household.<i class="bi bi-arrow-right"></i></p><hr />
+							</div>
+			</div>
+			<div class="col-md-4">
+							<p class="fst-italic">To play a prominent role in adding to the happiness and well-being of as many children as possible</p>
+							<img src="images/girl.svg" class="img-fluid" width="300px">
+			</div>
+			<div class="col-md-1"></div>
+
+</div>
+<!-- "Our value" section ends -->
+
+
+<!-- footer begins -->
+
+<footer class="text-center text-lg-start text-white">
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row">
+		        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-4">
+				          <a href="#!" class="text-reset text-decoration-none">Benefits</a>
+		        </div>
+		        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-4">
+				          <a href="#" class="text-reset text-decoration-none">About us</a>
+		        </div>
+		        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-4">
+				          <a href="#" class="text-reset text-decoration-none"><img src="images/logo.png"></a>
+		        </div>
+		        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-4">
+				          <a href="#" class="text-reset text-decoration-none">Testimonials</a>
+		        </div>
+		        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-4">
+				          <a href="#" class="text-reset text-decoration-none">values</a>
+		        </div>
+      </div>
+    </div>
+  </section><hr>
+  <div class="container text-center p-2 pb-2">
+    <section class="row">
+    	 			<div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+				          	<p class="text-muted">© 2022 Copyright Popees Baby Care</p>
+		        </div>
+		        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+								    <a class="btn btn-floating text-white" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+									  <a class="btn btn-floating text-white" href="#!" role="button"><i class="bi bi-twitter"></i></a>
+									  <a class="btn btn-floating text-white" href="#!" role="button"><i class="bi bi-whatsapp"></i></a>
+									  <a class="btn btn-floating text-white" href="#!" role="button"><i class="bi bi-instagram"></i></a>
+		        </div>
+		        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
+				          	<p class="text-muted">Designed by: Webandcrafts</p>
+		        </div>
+    				
+    </section>
+  </div>
+</footer>
+
+<!-- footer ends -->
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
